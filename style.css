@@ -1,0 +1,60 @@
+*, *::after, *::before {margin: 0; padding: 0; box-sizing: border-box;}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: #eb3007;
+}
+li {
+    list-style-type: none;
+    width: max-content;
+}
+.stickynavber {
+    background-color: #fff;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.topline {
+    height: 5px;
+    width: 100%;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ea4c2c+0,ea4c2c+50,eb3007+51,eb3007+100 */
+background: #ea4c2c; /* Old browsers */
+background: -moz-linear-gradient(top,  #ea4c2c 0%, #ea4c2c 50%, #eb3007 51%, #eb3007 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ea4c2c 0%,#ea4c2c 50%,#eb3007 51%,#eb3007 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ea4c2c 0%,#ea4c2c 50%,#eb3007 51%,#eb3007 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea4c2c', endColorstr='#eb3007',GradientType=0 ); /* IE6-9 */
+
+}
+/*--------------- Header Section -------------*/
+header .row .fa-phone, header .row .fa-envelope {
+    height: 50px;
+    width: 50px; 
+    background-color: #eb3007;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    margin-right: 15px;
+}
+header .phone {
+    margin: 0;
+    padding: 0;
+}
+header .row img {}
+
+
+
+
+@media (max-width: 767px) {
+    header {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    header .icon {
+        margin-bottom: 15px;
+    }
+}
