@@ -234,7 +234,7 @@
 /*---------------- Responsive Navigation -------------*/
 
 @media (max-width: 991px) {
-    .sticky {
+    .sticky nav.active{
         height: 100vh;
         overflow-y: scroll;
     }
