@@ -5,8 +5,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    overflow: scroll;
     box-shadow: 0 0 10px rgba(0,0,0,.5);
     animation-name: scrolltop;
     animation-duration: 1s;
@@ -25,6 +23,9 @@
         -webkit-transform: none;
     }
 }
+.stickynavber {
+    z-index: 9999;
+}
 .navber {
     display: flex;
     align-items: center;
@@ -41,6 +42,8 @@
     display: flex;
     flex-direction: row;
     margin: 0;
+    background-color: #fff;
+    z-index: 999;
 }
 .stickynavber nav ul li {
     position: relative;
@@ -231,6 +234,10 @@
 /*---------------- Responsive Navigation -------------*/
 
 @media (max-width: 991px) {
+    .sticky {
+        height: 100vh;
+        overflow-y: scroll;
+    }
     .stickynavber .navber {
         padding: 10px 20px;
     }
