@@ -28,12 +28,23 @@
 
   }
 /*------------------ Typography ----------------*/
+p{
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5{
+    color: #333 !important;
+}
 a {
     text-decoration: none;
     color: #000;
 }
 a:hover {
     color: #eb3007;
+}
+ul {
+    margin: 0;
+    padding: 0;
 }
 li {
     list-style-type: none;
@@ -66,15 +77,72 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea4c2c', end
     text-transform: capitalize; 
 }
   
-  .primary_btn:hover {
+.primary_btn:hover {
     background: #eb3007; }
   
-  .primary_btn, nav .navbar-nav .nav-item .nav-link, nav .navbar-nav .nav-item .nav-link::after, #procuct_section .nav a {
+.primary_btn, nav .navbar-nav .nav-item .nav-link, nav .navbar-nav .nav-item .nav-link::after, #procuct_section .nav a {
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease; }
+    -o-transition: all 0.5s ease; 
+}
+.title {
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 80px;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #eb3007;    
+}
+.title::before{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    height: 13px;
+    width: 15%;   
+    border-radius: 10px; 
+    z-index: 2;
+    background: #eb3007; /* Old browsers */
+    background: -moz-linear-gradient(left,  #eb3007 0%, #ff6600 38%, #ff6600 71%, #eb3007 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #eb3007 0%,#ff6600 38%,#ff6600 71%,#eb3007 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #eb3007 0%,#ff6600 38%,#ff6600 71%,#eb3007 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb3007', endColorstr='#eb3007',GradientType=1 ); /* IE6-9 */
+    animation-name: title;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes title {
+    0%{
+        left: 10%;
+    }
+    25%{
+        left: 35%;
+    }
+    50%{
+        left: 55%;
+    }
+    75%{
+        left: 75%;
+    }
+    100%{
+        left: 10%;
+    }
+}
 /*--------------- Header Section -------------*/
 header .row .fa-phone, header .row .fa-envelope {
     height: 50px;
@@ -125,9 +193,93 @@ padding-top: 30px; }
     height: 450px;
 }
 
+/* ------------------- our_branch ----------------*/
+
+#our_branch {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+#our_branch  .col-md-4 {
+    padding-left: 20px;
+    border-left: 3px solid #eb3007;
+    position: relative;
+}
+#our_branch .col-md-4::after{
+    content: "";
+    left: 0;
+    top: 30%;
+    position: absolute;
+    border: 6px solid transparent;
+    border-left: 6px solid #eb3007;
+}
 
 
+/* ------------------- Slider section ----------------*/
+/* ------------------- Slider section ----------------*/
+/* ------------------- Slider section ----------------*/
+/* ------------------- Slider section ----------------*/
 
+
+/* ------------------- Down Footer ----------------*/
+footer .up_footer h5{
+    margin: 40px 0;
+}
+footer .up_footer .nav {
+    justify-content: center;
+}
+footer .up_footer .nav li {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+footer .up_footer .nav li a, footer .up_footer .fa-phone, footer .up_footer .fa-envelope {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
+    color: #333;
+    transition: linear .3s all;
+}
+footer .up_footer .nav li a:hover {
+    border-color: #eb3007;
+    background-color: #eb3007;
+    color: #fff;
+}
+footer .fa-phone , footer .fa-envelope{
+    margin-right: 15px;
+    border-color: #eb3007 !important;
+    background-color: #eb3007;
+    color: #fff !important;
+}
+footer .up_footer{
+    background-color: #f7f7f7;
+}
+footer .up_footer h3{
+    margin-bottom: 10px;
+}
+footer .up_footer h6 {
+    margin: 20px 0;
+}
+footer .up_footer .col-md-3 ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px;
+    display: block;
+}
+
+footer .down_footer .payment_img {
+    height: 30px;
+    width: 50px;
+    margin-right: 18px;
+}
+footer .down_footer span {
+    font-weight: bold;
+    color: #eb3007;
+}
 
 
 
@@ -138,7 +290,7 @@ padding-top: 30px; }
         display: none;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     header .icon {
         margin-bottom: 15px;
     }
