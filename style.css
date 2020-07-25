@@ -193,6 +193,45 @@ padding-top: 30px; }
     height: 450px;
 }
 
+/* ------------------- achivement section ----------------*/
+#achivement {
+    margin-bottom: 80px;
+}
+#achivement .container .row{
+}
+#achivement .achive-item {
+    background: #f7f7f7;
+    padding: 24px 0 8px 0;
+    border-right: 1px solid #dddddd;
+    transition: all linear .3s;
+    border-bottom: 2px solid transparent;
+    box-shadow: 0px 10px 20px rgba(221, 221, 221, 0.59);
+}
+#achivement .achive-item:hover{
+    border-bottom-color: #eb3007;
+}
+#achivement .radius-1 {
+    border-radius: 10px 0 0 10px;
+}
+#achivement .radius-2 {
+    border-radius: 0 10px 10px 0;
+    border-right: 0;
+}
+#achivement a {
+
+}
+#achivement a:hover {}
+#achivement a i {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+#achivement a p {
+    font-size: 18px;
+    color: #333;
+    padding-bottom: 15px;
+}
+
+/* ------------------- Slider section ----------------*/
 /* ------------------- our_branch ----------------*/
 
 #our_branch {
@@ -214,8 +253,6 @@ padding-top: 30px; }
 }
 
 
-/* ------------------- Slider section ----------------*/
-/* ------------------- Slider section ----------------*/
 /* ------------------- Slider section ----------------*/
 /* ------------------- Slider section ----------------*/
 
@@ -295,3 +332,4 @@ footer .down_footer span {
         margin-bottom: 15px;
     }
 }
+
