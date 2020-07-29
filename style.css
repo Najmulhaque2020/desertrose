@@ -1,3 +1,8 @@
+/*Font Includ*/
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/*Reset Code*/
 *, *::after, *::before {margin: 0; padding: 0; box-sizing: border-box;}
 
 /*------------------ Typography ----------------*/
@@ -28,6 +33,16 @@
 
   }
 /*------------------ Typography ----------------*/
+/*
+    font-family: 'Oswald', sans-serif;
+*/
+body {
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Quattrocento', serif;
+    font-weight: 700;
+}
 p{
     padding: 0;
     margin: 0;
@@ -37,7 +52,7 @@ h1,h2,h3,h4,h5{
 }
 a {
     text-decoration: none;
-    color: #000;
+    color: #333;
 }
 a:hover {
     color: #eb3007;
@@ -102,17 +117,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea4c2c', end
     bottom: -15px;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 3px;
     width: 100%;
     background-color: #eb3007;    
 }
 .title::before{
     content: "";
     position: absolute;
-    bottom: -20px;
+    bottom: -18px;
     left: 0;
     right: 0;
-    height: 13px;
+    height: 8px;
     width: 15%;   
     border-radius: 10px; 
     z-index: 2;
@@ -195,9 +210,7 @@ padding-top: 30px; }
 
 /* ------------------- achivement section ----------------*/
 #achivement {
-    margin-bottom: 80px;
-}
-#achivement .container .row{
+    margin-bottom: 60px;
 }
 #achivement .achive-item {
     background: #f7f7f7;
@@ -217,10 +230,6 @@ padding-top: 30px; }
     border-radius: 0 10px 10px 0;
     border-right: 0;
 }
-#achivement a {
-
-}
-#achivement a:hover {}
 #achivement a i {
     font-size: 50px;
     margin-bottom: 25px;
@@ -231,25 +240,155 @@ padding-top: 30px; }
     padding-bottom: 15px;
 }
 
+/* ------------------- welcome section ----------------*/
+#welcome .container{
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(235, 0, 7,.3); 
+}
+.welcome-header h1 {
+    color: #333;
+    font-size: calc(0.90rem + 1.2vw);
+}
+.welcome-details p {
+    font-size: 18px!important;
+    color: #333;
+    text-align: justify;
+    padding-top: 20px;
+}
+.welcome-details a {
+    font-weight: bold;
+    color: #eb3007;
+}
+.welcome-details a:hover {
+    color: #333;
+}
+/* ------------------- support section ----------------*/
+#support .container {
+    padding: 50px 0;
+    border-bottom: 1px solid rgb(235, 0, 7,.3); 
+}
+#support .image_div {
+    text-align: center;
+}
+#support .image_div img {
+    max-height: 500px;
+}
+#support .content h1 {
+    text-transform: uppercase;
+}
+#support .content h1 span {
+    color: #eb3007;
+}
+#support .content p {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+/* ------------------- learning_system section ----------------*/
+#learning_system .container {
+    padding: 50px 0;
+    border-bottom: 1px solid rgb(235, 0, 7,.3);    
+} 
+#learning_system h1 {
+    text-transform: uppercase;
+} 
+#learning_system h1 span {
+    color: #eb3007;
+} 
+#learning_system .content p{
+    padding-top: 15px;
+    padding-bottom: 30px;
+} 
+#learning_system .image_div {
+    text-align: center;
+} 
+#learning_system .image_div img {
+    max-height: 420px;
+}
+/* ------------------- Success Stories section ----------------*/
+#success_stories > .container {
+    padding: 50px 0;
+    border-bottom: 1px solid rgb(235, 0, 7,.3);
+}
+#success_stories .success_head  {
+    margin-bottom: 40px;
+}
+#success_stories .success_head .title {
+    margin-bottom: 50px;
+}
+#success_stories .success_head p {
+    margin-bottom: 20px;
+}
+#success_stories .carousel-indicators {
+    position: static;
+}
+#success_stories .carousel-indicators li, #success_stories .carousel-indicators li img {
+    text-indent: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid #eb3007;
+}
+#success_stories .successhuman {
+    background: url('img/greadint-bg.png') no-repeat;
+    text-align: center;
+    height: 554px;
+    position: relative;
+    overflow: hidden;
+    background-size: 480px;
+    background-position: center;
+}
+#success_stories .success_content {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#success_stories .success_content h1 {
+    color: #eb3007 !important;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+#success_stories .success_content h5, #success_stories .success_content h6 {
+    font-weight: 600;
+    color: #eb3007 !important;
+    opacity: .7;
+}
+#success_stories .success_content p {
+    font-size: 16px;
+    color: #333;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#success_stories .successhuman img {
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#success_stories .carousel-indicators li {
+    background-color: #eb3007 !important;
+}
 /* ------------------- Slider section ----------------*/
 /* ------------------- our_branch ----------------*/
 
-#our_branch {
-    background-color: #f7f7f7;
+#our_branch .container {
     padding: 50px 0;
 }
 #our_branch  .col-md-4 {
     padding-left: 20px;
     border-left: 3px solid #eb3007;
     position: relative;
+    opacity: 0.8;
 }
 #our_branch .col-md-4::after{
     content: "";
     left: 0;
-    top: 30%;
+    top: 15%;
     position: absolute;
-    border: 6px solid transparent;
-    border-left: 6px solid #eb3007;
+    border: 8px solid transparent;
+    border-left: 7px solid #eb3007;
 }
 
 
@@ -258,6 +397,9 @@ padding-top: 30px; }
 
 
 /* ------------------- Down Footer ----------------*/
+footer {
+    border-top: 1px solid rgb(235, 0, 7,.3);
+}
 footer .up_footer h5{
     margin: 40px 0;
 }
@@ -298,14 +440,15 @@ footer .up_footer h3{
     margin-bottom: 10px;
 }
 footer .up_footer h6 {
-    margin: 20px 0;
+    margin: 12px 0;
 }
 footer .up_footer .col-md-3 ul li a {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
     text-transform: uppercase;
-    padding: 8px;
+    padding: 4px 0;
     display: block;
+    opacity: .8;
 }
 
 footer .down_footer .payment_img {
