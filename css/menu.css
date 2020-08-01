@@ -67,10 +67,16 @@
     transition: all .5s ease-in-out;
     z-index: 9;
 }
+.stickynavber nav ul li.active a{
+    padding: 10px 5px;
+}
 .stickynavber nav ul li ul li a{
     padding: 6px 15px;
 }
-.stickynavber nav ul li a:hover {
+.stickynavber nav ul li.active {
+    padding-left: 25px;
+}
+.stickynavber nav ul li a:hover, .stickynavber nav ul li.active a {
     color: #fff;
 }
 .stickynavber nav ul li ul li a:hover {
@@ -194,7 +200,7 @@
     -ms-transition: all 1.5s cubic-bezier(.43,1.91,.35,.74);
     -o-transition: all 1.5s cubic-bezier(.43,1.91,.35,.74);
 }
-.stickynavber ul li:hover a::before {
+.stickynavber ul li:hover a::before, .stickynavber ul li.active a::before {
     transform: scale(1.2) rotateY(360deg) skew(10deg);
     -webkit-transform: scale(1.2) rotateY(360deg) skew(10deg);
     -moz-transform: scale(1.2) rotateY(360deg) skew(10deg);
@@ -228,7 +234,7 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.stickynavber ul li:hover a::after {
+.stickynavber ul li:hover a::after, .stickynavber ul li.active a::after{
     transform: translate(-50%, -50%) scale(1.2);
     -webkit-transform: translate(-50%, -50%) scale(1.2);
     -moz-transform: translate(-50%, -50%) scale(1.2);
@@ -283,6 +289,13 @@
     }
     .stickynavber nav.active ul li a {
         padding: 15px 10px;
+    }
+    .stickynavber nav ul li.active a{
+        padding: 15px 5px;
+    }
+    .stickynavber nav.active ul li.active {
+        padding-left: 0px;
+        padding-top: 15px;
     }
     .stickynavber nav.active .navigation {
         flex-direction: column;
